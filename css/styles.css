@@ -1,0 +1,8 @@
+.todolist {
+  display: none;
+}
+
+.crossout {
+  text-decoration: line-through;
+  background-color: red;
+}

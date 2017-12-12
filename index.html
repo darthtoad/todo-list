@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Add a task!</h1>
+      <form id="theform">
+        <div class="form-group">
+          <label for="task">Add a task!</label>
+          <input type="text" class="form-control" id="task">
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" class="form-control" id="date">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" id="description">
+        </div>
+          <button type="submit" class="btn-success">Add</button>
+      </form>
+      <ul id="output">
+        <div class="todolist">
+          <h2>Task: <span id="taskname"></span></h2>
+          <p>Description: <span id="descriptionoutput"></span></p>
+          <p>Date to Complete: <span id="dateoutput"></span></p>
+        </div>
+      </ul>
+      <form id=remove-element>
+        <div class="form-group">
+          <label for="removeTask">Remove a task by name!</label>
+          <input type="text" class="form-control" id="removeTask">
+          <p id="arg">Remove</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
